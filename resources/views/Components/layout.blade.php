@@ -52,6 +52,9 @@
     </nav>
 
 
+    <h1 class="text-2xl font-bold">
+        {{ $header }}
+    </h1>
     {{ $slot }}
 </body>
 
