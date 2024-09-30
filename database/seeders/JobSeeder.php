@@ -13,10 +13,6 @@ class JobSeeder extends Seeder
      */
     public function run(): void
     {
-        $employers = \App\Models\Employer::factory(10)->create();
-
-        $employers->each(function ($employer) {
-            $employer->jobListings()->saveMany(Job::factory(5)->make());
-        });
+        //
     }
 }
