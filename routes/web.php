@@ -7,8 +7,15 @@ Route::get('/', function () {
 });
 
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/jobs', function () {
+    return view('job-listings');
+});
+
+Route::get('jobs/{id}', function ($id) {
+    return view('job', [
+        'job' => 'engineer',
+        'id' => '1'
+    ]);
 });
 
 Route::get('/contact', function () {
