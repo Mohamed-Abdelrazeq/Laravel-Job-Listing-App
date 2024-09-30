@@ -2,5 +2,5 @@
 
     <x-slot:header>Job Listings Page</x-slot:header>
 
-    Job {{ $id }}
+    Job title: {{ $job->title }}
 </x-layout>

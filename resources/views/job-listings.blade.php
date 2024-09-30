@@ -2,5 +2,10 @@
 
     <x-slot:header>Job Listings Page</x-slot:header>
 
-    Hello From About
+    <ul>
+        @foreach ($jobs as $job)
+            <li> <a href="/jobs/{{ $job->id }}">{{ $job->title }}</a> </li>
+        @endforeach
+    </ul>
+
 </x-layout>
