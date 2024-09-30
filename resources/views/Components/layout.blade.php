@@ -43,7 +43,8 @@
     </nav>
 
 
-    <h1 class="text-2xl font-bold">
+    <h1
+        class="text-4xl font-extrabold text-center my-12 bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-transparent bg-clip-text">
         {{ $header }}
     </h1>
     {{ $slot }}
