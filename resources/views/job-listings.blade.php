@@ -24,9 +24,7 @@
         @endforeach
 
         <div class="mt-6">
-            <div class="pagination-links">
-                {{ $jobs->links() }}
-            </div>
+            {{ $jobs->links() }}
         </div>
     </div>
 
