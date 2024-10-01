@@ -2,7 +2,7 @@
 
     <x-slot:header>Job Listings Page</x-slot:header>
 
-    <div class="container mx-auto p-6 bg-white shadow-md rounded-lg">
+    <div class="container mx-auto p-6 bg-white shadow-md rounded-lg mb-20">
         @foreach ($jobs as $job)
             <div class="mb-6 p-6 border border-gray-200 rounded-lg hover:shadow-lg transition duration-300">
                 <a href="/jobs/{{ $job->id }}" class="block text-lg font-semibold text-blue-600 hover:underline">
@@ -22,6 +22,12 @@
                 </div>
             </div>
         @endforeach
+
+        <div class="mt-6">
+            <div class="pagination-links">
+                {{ $jobs->links() }}
+            </div>
+        </div>
     </div>
 
 </x-layout>

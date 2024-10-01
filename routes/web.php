@@ -12,7 +12,7 @@ Route::get('/jobs', function () {
     return view(
         'job-listings',
         [
-            'jobs' => Job::with(['employer', 'tags'])->get(),
+            'jobs' => Job::with(['employer', 'tags'])->paginate(15),
         ],
     );
 });
